@@ -35,6 +35,14 @@ nav{
     border:2px solid ;
     margin-top: 15px;  
     background: rgba(0, 0, 0, 0.5);
+    margin-top :30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
     
     
 }
@@ -63,6 +71,7 @@ nav a:hover{
 .c{
     margin-top: 30px;
     position: relative; 
+    box-shadow: 4px 5px 10px black;
 }
 /*
 .c h4{
@@ -100,6 +109,7 @@ nav a:hover{
 
 .iv{
     margin-top: 30px;
+    box-shadow: 4px 5px 10px black;
     /*border:2px solid  red ;*/
   
 }
@@ -117,29 +127,33 @@ nav a:hover{
 .iv .pics{
     width:100%;
     background: rgba(61, 61, 61, 0.5);
-    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.iv .pics img{
+    margin:4px;
 }
 .iv .videos{
     margin-top: 10px;
     width: 100%;
     background-color: rgb(228, 159, 159);
-    margin-right: 5px;
- 
-    
+    display: flex;
+    flex-wrap: wrap;
+       
+}
+.iv .videos video{
+    margin:4px;
 }
 
 .details{
     margin-top: 30px;
-    border:2px solid  red ;
+   /* border:2px solid  red ;*/
 
     display: flex;
     /*flex-flow: row wrap;*/
-    flex-wrap: wrap;
-
-
-   
-    
+    flex-wrap: wrap;  
+    box-shadow: 4px 5px 10px black;
      
 }
 hr{
@@ -149,12 +163,17 @@ hr{
     background-color: aqua;
     border-radius: 8px;
     border: 2px solid black;
-    box-shadow: 4px 4px 5px black;
+    box-shadow: 4px 4px 5px gray;
     width:200px;
     height:80px;
     text-align: center;
     /*margin: 20px;*/
+    margin:2px;
     
+}
+.person:hover{
+    box-shadow: 4px 4px 5px black;
+    background:linear-gradient(red,white,white,red);
 }
 .person a{
    
@@ -169,10 +188,14 @@ footer{
     background-color: grey;
     margin-top:30px;
     padding: 10px;
-    border:2px solid  red ;
+    /*border:2px solid  red ;*/
     color: white;
     font-weight: bolder;
+}
 
+footer a{
+    text-decoration: none;
+    color:whitesmoke;
 
 }
 
@@ -180,6 +203,70 @@ footer{
 footer p{
     margin:5px;
 }
+.foot{
+    
+    margin-left: 50%;
+}
+
+.foot img{
+    height:50px;
+    width:50px;
+    
+}
+
+ 
+
+@media screen and (max-width:990px){
+    
+    nav{ 
+        margin-top :10px;   
+    }
+    nav a{
+        font-size: 10px;
+        width: 100%;
+        margin:3px;
+       
+    }
+    nav ul{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .vtext{
+        
+        top:50%;
+        width:100%;
+        height:100px;
+        font-size: 10px;
+       
+       
+    }
+    .iv .pics img{
+        margin:20px;
+    }
+
+    .iv .videos video{
+        margin:15px;
+    }
+    .details .person{
+   margin:15px;
+    }
+    
+}
+
+  
+@media (max-aspect-ratio: 16/9) {
+    .vd {
+        width: 100vw; 
+        height:auto;
+        margin-left: 50vw;
+      transform: translate(-50%);
+    }
+  }
+
+   
 
 
 
