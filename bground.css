@@ -1,0 +1,64 @@
+*{
+  margin: 0px;
+}
+.h{
+    /*background:linear-gradient(white,rgb(247, 102, 102),white,rgb(241, 101, 101),white) ;
+    */padding: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 13px; 
+    
+}
+.alig{
+    display: inline-flex;
+}
+.alig img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+nav{
+  
+    padding: 5px;
+    border:2px solid ;
+    margin-top: 15px;
+    
+}
+nav a{
+    font-size: 18px;
+    color: white;
+    background-color:rgb(246, 92, 92);
+    font-weight: bold ;
+    padding: 3px;
+    text-align: center;
+    margin-inline-start: 180px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+    opacity:0.8;
+    box-shadow: 3px 3px 2px red;
+}
+
+/* we need to set up events ,persons detatils,images,videos... and @media..*/
+
+.c{
+    margin-top: 30px;
+    border:2px solid  red ;
+
+}
+.c h4{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width:fit-content;
+    margin-left: 50%;
+
+   
+}
